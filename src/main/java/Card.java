@@ -24,11 +24,11 @@ public class Card {
    /**
 	 * Creates a new Card instance.
 	 *
-	 * @param cardRank  a String value
+	 * @pram cardRank  a String value
 	 *                  containing the rank of the card
-	 * @param cardSuit  a String value
+	 * @pram cardSuit  a String value
 	 *                  containing the suit of the card
-	 * @param cardPointValue an int value
+	 * @pram cardPointValue an int value
 	 *                  containing the point value of the card
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
@@ -38,40 +38,40 @@ public class Card {
 
 	/**
 	 * Accesses this Card's suit.
-	 * @return this Card's suit.
+	 * @rturn this Card's suit.
 	 */
 	public String getSuit() {
         // YOUR CODE HERE
-        return "";
+        return this.suit;
    }
 
 	/**
 	 * Accesses this Card's rank.
-	 * @return this Card's rank.
+	 * @reurn this Card's rank.
 	 */
 	public String getRank() {
         // YOUR CODE HERE
-        return "";
+        return this.rank;
 	}
 
    /**
 	 * Accesses this Card's point value.
-	 * @return this Card's point value.
+	 * @retrn this Card's point value.
 	 */
 	public int getPointValue() {
         // YOUR CODE HERE
-        return -1;
+        return this.pointValue;
 	}
 
 	/** Compare this card with the argument.
-	 * @param otherCard the other card to compare to this
-	 * @return true if the rank, suit, and point value of this card
+	 * @para otherCard the other card to compare to this
+	 * @retun true if the rank, suit, and point value of this card
 	 *              are equal to those of the argument;
 	 *         false otherwise.
 	 */
 	public boolean equals(Card otherCard) {
 		// YOUR CODE HERE
-        return false;
+        return (this.suit.equals(otherCard.getSuit()) && this.rank.equals(otherCard.getRank()) && this.pointValue == otherCard.getPointValue());
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class Card {
 	 * of a Deck in an easily readable format or performing
 	 * other similar functions.
 	 *
-	 * @return a String containing the rank, suit,
+	 * @ a String containing the rank, suit,
 	 *         and point value of the card.
 	 */
 	@Override

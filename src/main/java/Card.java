@@ -71,7 +71,10 @@ public class Card {
 	 */
 	public boolean equals(Card otherCard) {
 		// YOUR CODE HERE
-        return (this.suit.equals(otherCard.getSuit()) && this.rank.equals(otherCard.getRank()) && this.pointValue == otherCard.getPointValue());
+        if (this.suit.equals(otherCard.getSuit()) && this.rank.equals(otherCard.getRank()) && this.pointValue == otherCard.getPointValue())
+            return true;
+        else
+            return false;
 	}
 
 	/**

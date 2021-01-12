@@ -5,9 +5,14 @@ public class Tester {
 
 	public static void main(String[] args) {
         Card card = new Card("Jack", "Spades", 11);
-        String[] suits = {"Spades, Hearts, Jacks, Clubs"};
-        String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-        int[] values = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-        System.out.println("")
+        Card card1 = new Card("Jack", "Spades", 11);
+        System.out.println(card.getRank() + "    " + card.getSuit() + "    " + card.getPointValue() + "    " + card.toString());
+        System.out.println(card.equals(card1));
+        String[] ranks = {"Ace", "2", "3"};
+        String[] suits = {"Clubs", "Hearts"};
+        int[] values = {1, 2, 3};
+        Deck d1 = new Deck(ranks, suits, values);
+        System.out.println(d1);
+        
 	}
 }
